@@ -3,12 +3,23 @@
 
 require 'rubygems'
 require 'sinatra'
-require 'sinatra/reloader' if develoment?
+require 'sinatra/reloader' if development?
 require 'pg'
 require 'pry'
 
-db = PG.connect(:dbname => 'address_book',
-      :host => 'localhost')
+
+get '/address_book' do
+  erb :address_book
+end
+
+puts "Hey gurl"
+
+
+
+
+
+# db = PG.connect(:dbname => 'address_book',
+#      :host => 'localhost')
 
 
 
