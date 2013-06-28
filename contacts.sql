@@ -1,5 +1,3 @@
--- DROP DATABASE address_book;
--- CREATE DATABASE address_book;
 CREATE TABLE contacts
 (
   first VARCHAR(25),
